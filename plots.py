@@ -1,6 +1,6 @@
 from  numpy import arange
 import matplotlib.pyplot as plt
-import seaborn as sb
+from seaborn import heatmap
 
 
 def plot(L):
@@ -8,7 +8,7 @@ def plot(L):
     fig, [axs1,axs2,axs3] = plt.subplots(3, 1, figsize=(30, 10))
     
     axs1.set_title("Colormap")
-    heat_map = sb.heatmap([[int(i) for i in L]], ax = axs1, xticklabels=False, yticklabels=False, cbar=False)
+    heat_map = heatmap([[int(i) for i in L]], ax = axs1, xticklabels=False, yticklabels=False, cbar=False)
 
 #     Para fazer um histograma, bom para ver a frequencia relativa
 #     axs1.set_title("Histogram")
