@@ -5,7 +5,7 @@ import pandas as pd
     
 #Função para o plot dos automatos 
 def plot(L, gerador = "A"):
-    fig, [axs1,axs2,axs3] = plt.subplots(3, 1, figsize=(10,6), dpi = 100, constrained_layout=True)
+    fig, [axs1,axs2,axs3] = plt.subplots(3, 1, figsize=(10.5,6), dpi = 100, constrained_layout=True)
     Title = "Visualização da Sequência Gerada pelo automato "
 
     fig.suptitle(Title+gerador)
@@ -18,7 +18,7 @@ def plot(L, gerador = "A"):
     axs2.set_title("Stem Plot")    
     (markers, stemlines, baseline) = axs2.stem( np.arange(0,len(L)), L, use_line_collection=True, markerfmt = "k.")#,linefmt='gray', basefmt = 'gray')
 
-    plt.setp(stemlines, linestyle="-", color="black", linewidth=0.5)
+    plt.setp(stemlines, linestyle="-", color="black", linewidth=0.3)
     plt.setp(baseline, linestyle=" ")#, color="black", linewidth=0.3, alpha = 0.1 )
     axs2.set_xlim(0,len(L))
 
