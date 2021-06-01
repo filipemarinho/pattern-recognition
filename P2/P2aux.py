@@ -5,7 +5,7 @@ import pandas as pd
 
 #Função usada para gerar os automatos a partir da matriz de probabilidades, retorna proximo numero da sequencia
 
-def NextStep(last, matriz):
+def next_step(last, matriz):
     i = 0
     p = matriz[last][0]
     r = np.random.random(1)[0]
@@ -16,10 +16,10 @@ def NextStep(last, matriz):
     return i
 
 #função que gera um automato de tamanho M 
-def New_automato(matriz, M = 200):
+def newAutomato(matriz, M = 200):
     automato = [0]
     while len(automato) < M:
-        automato.append(NextStep(automato[-1], matriz))
+        automato.append(next_step(automato[-1], matriz))
     return automato
 
 #Metodos implementados:

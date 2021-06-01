@@ -38,7 +38,7 @@ def freq(automato, symbol):
             counter +=1
     return counter/automato.size
 
-def plot_density(frequencies, automato="A"):
+def plotDensity(frequencies, automato="A"):
     fig = plt.gcf()
     fig.suptitle("Densidade de f para o automato "+str(automato))
     colors = ["dodgerblue","orange","deeppink"]
