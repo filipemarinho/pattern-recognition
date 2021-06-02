@@ -44,7 +44,7 @@ def plot_density(frequencies, automato="A"):
     colors = ["dodgerblue","orange","deeppink"]
     i=0
     for f in frequencies:
-        sb.distplot(f, color = colors[i],  hist = False, kde = True)
+        sb.kdeplot(f, color = colors[i])
         i+=1
 
     plt.xlim(0,1)

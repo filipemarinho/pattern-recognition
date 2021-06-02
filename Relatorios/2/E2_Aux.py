@@ -1,16 +1,16 @@
-import pandas as pd
-import numpy as np
-import seaborn as sb
-import matplotlib.pyplot as plt
-from sklearn.metrics import confusion_matrix
-from sklearn.preprocessing import StandardScaler
-from tensorflow.keras.datasets import mnist
-from sklearn.cluster import KMeans
-from sklearn import datasets
-from scipy.spatial.distance import cdist
-from collections import Counter
-import tensorflow as tf
-from sklearn.model_selection import train_test_split
+# import pandas as pd
+# import numpy as np
+# import seaborn as sb
+# import matplotlib.pyplot as plt
+# from sklearn.metrics import confusion_matrix
+# from sklearn.preprocessing import StandardScaler
+# from tensorflow.keras.datasets import mnist
+# from sklearn.cluster import KMeans
+# from sklearn import datasets
+# from scipy.spatial.distance import cdist
+# from collections import Counter
+# import tensorflow as tf
+# from sklearn.model_selection import train_test_split
 
 
 

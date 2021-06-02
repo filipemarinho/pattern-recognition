@@ -184,3 +184,35 @@ def plot(L, gerador = "A"):
 #         plt.grid()
 
     plt.show()
+    
+    
+def Integral(L):
+    intL = []
+    for i in range(len(L)):
+        integral = 0
+        for t in range(i):
+            integral += L[t]
+        intL.append(integral)
+    return intL
+
+def Derivative(L):
+    dL = [] 
+    for i in range(len(L)-1):
+        derivative = L[i+1] - L[i]
+        dL.append(derivative)
+    return dL
+
+def plot_stem(L, title = "Visualização da sequência"):
+    fig, ax = plt.subplots(1, 1, figsize=(10,2), dpi = 100, constrained_layout=True)
+    ax.set_title(title)    
+    (markers, stemlines, baseline) = ax.stem( np.arange(0,len(L)), L, use_line_collection=True, markerfmt = "k.")#,linefmt='gray', basefmt = 'gray')
+
+    plt.setp(stemlines, linestyle="-", color="black", linewidth=0.5)
+    plt.setp(baseline, linestyle=" ")#, color="black", linewidth=0.3, alpha = 0.1 )
+    ax.set_xlim(0,len(L))
+    
+def plot_line(L, title = "Visualização da sequência"):
+    fig, ax = plt.subplots(1, 1, figsize=(10,2), dpi = 100, constrained_layout=True)
+    ax.set_title(title)    
+    ax.step(np.arange(0,len(L)),L, where = 'post', color = 'black', linewidth = 0.9)
+    ax.set_xlim(0,len(L))
