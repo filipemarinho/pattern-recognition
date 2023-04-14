@@ -1,9 +1,8 @@
 # pattern-recognition
 
----
 Alguns dos programas úteis que eu usei em análise e reconhecimento de padrões.
 
-Projetos
+## Projetos
 1. Automatos celulares como geradores de padrões
 1. Medidas para reconhecimento de padrões: média, desvio padrão, FFT...
 1. Distribuições uniformes e PCA
